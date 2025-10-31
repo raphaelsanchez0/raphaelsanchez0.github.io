@@ -1,7 +1,100 @@
 <!DOCTYPE html>
+<!-- This page is adapted from w3schools "How to make a link tree website https://www.w3schools.com/howto/howto_website_create_linktree.asp" -->
 <html lang="en">
-  <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with the Github Pages</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Add your name below -->
+    <title>Raphael Sanchez</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="main-text-color">
+    <!-- Content container. Everything except footer goes here -->
+    <div class="container">
+      <!-- Image and name container. Put your replacement photo—which you should crop to be square—in the images folder, then change the source attribute to images/yourportraitfilename.jpg. This path says, "Look in the images folder for yourportraitfilename.jpg." Be sure to change the alt text, too. -->
+      <div class="image-container">
+        <img
+          src="https://www.raphaelsanchez.net/_next/image?url=%2Fimages%2Fprofile-img.png&w=640&q=100"
+          alt="Picture of Raphael Sanchez"
+        />
+      </div>
+      <div class="intro">
+        I'm <span class="name"><strong>Raphael Sanchez</strong></span
+        >, a CS major @ VT! I like to climb
+      </div>
+      <div class="section-header">
+        <h1>My Stuff</h1>
+      </div>
+      <!-- Replace the # inside of the href="#" with your links. -->
+      <div class="links-container">
+        <div class="button toggle">Blog post</div>
+        <div class="slidedown">
+          <div class="description">
+            <h2>The Real Reason Climbing Gyms Cost So Much</h2>
+            <p>We are we paying so much to touch fake rocks?</p>
+            <a
+              href="https://medium.com/@raphaelsanchez_44402/the-real-reason-climbing-gyms-cost-so-much-a-breakdown-1af5c0fff0f7"
+              class="external-link"
+              target="_blank"
+              >Read</a
+            >
+          </div>
+        </div>
+
+        <div class="button toggle">Video</div>
+        <div class="slidedown">
+          <div class="description">
+            <h2>Prank Interview with Elijah Wood</h2>
+            <p>My favorite video on youtube</p>
+            <a
+              href="https://www.youtube.com/watch?v=IfhMILe8C84&list=PLrftX1iwUuu7JcdFrj_w2hSWguLYEVyE_&index=3"
+              class="external-link"
+              target="_blank"
+              >Watch</a
+            >
+          </div>
+        </div>
+
+        <div class="button toggle">Podcast</div>
+        <div class="slidedown">
+          <div class="description">
+            <h2>Crime Junkies</h2>
+            <p>My Favorite Pod</p>
+            <a
+              href="https://crimejunkiepodcast.com/"
+              class="external-link"
+              target="_blank"
+              >Listen</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Replace # with PDF from Google Docs, or replace the entire section with whatever you want. Or delete it! Or add another section below it!-->
+      <div class="section-header">
+        <h1>About me</h1>
+      </div>
+
+      <div class="links-container">
+        <a
+          href="https://www.raphaelsanchez.net/resume/resume.pdf"
+          class="button"
+          target="_blank"
+          >Resume</a
+        >
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        © Raphael Sanchez, 2024. Based on a design by
+        <a
+          href="https://www.w3schools.com/howto/howto_website_create_linktree.asp"
+          target="_blank"
+          >w3schools</a
+        >.
+      </p>
+    </div>
+    <script type="text/javascript" src="js/slider.js"></script>
   </body>
 </html>
